@@ -23,11 +23,11 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: public.ecr.aws/e3i3d3z5/three-tier-frontend-d:latest
+        image: public.ecr.aws/g1h2n7z1/three-tier-frontend:latest
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://app.trainwithshubham.com/api/tasks" 
+            value: "http://challenge.asr19s.com/api/tasks" 
         ports:
         - containerPort: 3000
        

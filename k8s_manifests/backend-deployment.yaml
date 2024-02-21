@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: public.ecr.aws/w8u5e4v2/workshop-backend:v1
+        image: public.ecr.aws/g1h2n7z1/three-tier-backend:latest
         imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
@@ -48,8 +48,8 @@ spec:
           periodSeconds: 5
         readinessProbe:
           httpGet:
-             path: /ok
-             port: 8080
+            path: /ok
+            port: 8080
           initialDelaySeconds: 5
           periodSeconds: 5
           successThreshold: 1
